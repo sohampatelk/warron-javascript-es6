@@ -253,3 +253,9 @@ const billAndTedsExcellentAdventure = new BuyableMovie( 'Bill and Ted\'s Excelle
 billAndTedsExcellentAdventure.setPrice = '16.37'; //seting value. set is not funtion .so we dontpass value like we pass value in function.here we define value like a variable.
 console.log( billAndTedsExcellentAdventure );
 
+//non static method which it needs and object
+billAndTedsExcellentAdventure.showPoster();
+
+//Static method are more generic and called directly from class.
+console.log(Calculator.add(4,7,65,2,"5",7,3,2));
+console.log(Calculator.substract(16,12));
