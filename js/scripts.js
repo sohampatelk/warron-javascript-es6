@@ -288,3 +288,45 @@ console.log(mySetIterator.next().value); //there is no value. it is undefined.
 mySet.delete ("Hello, World!!!");
 console.log(mySet);
 
+/**
+ * Maps
+ */
+const myValues = { //old workaround was objects..but these are properties.
+    name: "Soham",
+    age: 30
+}
+console.log(myValues); //object...gross,not what this is intended for,
+
+const myMap = new Map([  //we can pass an array of array
+    ["name","Soham"], //["key","value"]
+    ["age",30],
+    ["greeting","you!!!"],
+    ["number",["3","4","6","7"]],  // it is array of an array you can store it in hash
+    [7,"we can use number as key unlike objects.."]
+]);
+console.log(myMap);
+console.log(myMap.size);
+console.log(myMap.has("age"));  //check for a key if exists or not?-ans -true
+console.log(myMap.get("age"));  //grab an value of the key
+
+const myMapIterator = myMap.keys(); //get an iterator
+console.log(myMapIterator.next().value); //first item key
+console.log(myMapIterator.next().value); //second
+console.log(myMapIterator.next().value); //third
+console.log(myMapIterator.next().value); //forth
+
+myMap.set("Country","Canada");  //add new key-value pair
+
+const myMapValueIterator = myMap.values(); //get an iterator for value
+console.log(myMapValueIterator.next().value); //first
+console.log(myMapValueIterator.next().value); //second
+console.log(myMapValueIterator.next().value); //third
+console.log(myMapValueIterator.next().value); //forth
+console.log(myMapValueIterator.next().value); //fifth
+console.log(myMapValueIterator.next().value); //sexth 
+console.log(myMapValueIterator.next().value); //seven ops..its not there so undefined
+
+console.log(myMap);
+
+myMap.clear();  //empty out our map
+console.log(myMap.size); //zero now
