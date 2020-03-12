@@ -250,6 +250,6 @@ console.log(dragonheart.showPoster());
 console.log(godfather.showPoster());
 
 const billAndTedsExcellentAdventure = new BuyableMovie( 'Bill and Ted\'s Excellent Adventure', 'Comedy', 1989 );
-billAndTedsExcellentAdventure.setPrice = '16.37';
+billAndTedsExcellentAdventure.setPrice = '16.37'; //seting value. set is not funtion .so we dontpass value like we pass value in function.here we define value like a variable.
 console.log( billAndTedsExcellentAdventure );
 
