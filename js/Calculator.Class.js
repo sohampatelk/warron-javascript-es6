@@ -19,7 +19,7 @@ export class Calculator {
         return Number(num1)*Number(num2);
     }
 
-    static Divide(num1 , num2){
+    static divide(num1 , num2){
         return num1/num2;
     }
 

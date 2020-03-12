@@ -254,8 +254,37 @@ billAndTedsExcellentAdventure.setPrice = '16.37'; //seting value. set is not fun
 console.log( billAndTedsExcellentAdventure );
 
 //non static method which it needs and object
-billAndTedsExcellentAdventure.showPoster();
+console.log(billAndTedsExcellentAdventure.showPoster());
 
 //Static method are more generic and called directly from class.
 console.log(Calculator.add(4,7,65,2,"5",7,3,2));
 console.log(Calculator.substract(16,12));
+
+/**
+ * sets
+ */
+let mySet = new Set();
+mySet.add(5);
+mySet.add(10);
+mySet.add(10);  //it its a same value then it eill be ignored. 10 is alredy set before.
+
+const myConstValueSet = "Hello, World!!!";
+mySet.add(myConstValueSet);
+
+console.log(mySet);
+console.log(mySet.size);    //length
+console.log(mySet.has(5));  //5 is in set its true
+console.log(mySet.has(15)); //its is not in set its false
+
+//console.log(mySet.entries());
+
+let mySetIterator = mySet.entries();
+console.log(mySetIterator.next().value); //show value 1
+console.log(mySetIterator.next().value); //show value 2
+console.log(mySetIterator.next().value); //show value 2
+console.log(mySetIterator.next().value); //there is no value. it is undefined.
+
+
+mySet.delete ("Hello, World!!!");
+console.log(mySet);
+
