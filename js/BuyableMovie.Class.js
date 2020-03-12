@@ -1,5 +1,6 @@
-import { Movie } from './Movie.Class.js';
-export class BuyableMovie extends Movie {
+import { Movie } from './Movie.Class.js'; //for we need to use functinality of Movie Class here so we need to import it here.
+
+export class BuyableMovie extends Movie {//because of extends the Movie class constructor called. now from here it goes directly to movie class. 
     // constructor ( name, genre, year, price ) {
     //     this.name = name;
     //     this.genre = genre;
